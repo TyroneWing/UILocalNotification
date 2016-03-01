@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  UILocalNotification
+//  NSTimer
 //
-//  Created by yi on 16/3/1.
+//  Created by yi on 16/2/29.
 //  Copyright © 2016年 yi. All rights reserved.
 //
 
@@ -17,8 +17,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    
     return YES;
 }
+
+//推送的内容
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification
+{
+    //这里，你就可以通过notification的useinfo，干一些你想做的事情了
+    if ([[notification.userInfo objectForKey:@"key"] isEqualToString:@"name"])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"本地通知" message:@"好困啊！！！！！！！" delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil,nil];
+        [alert show];
+        
+    }
+    application.applicationIconBadgeNumber = 0; //移除角标
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

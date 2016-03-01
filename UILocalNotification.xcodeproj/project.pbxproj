@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		196393A81C8567F90047D2A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393A71C8567F90047D2A4 /* main.m */; };
-		196393AB1C8567F90047D2A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393AA1C8567F90047D2A4 /* AppDelegate.m */; };
-		196393AE1C8567F90047D2A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393AD1C8567F90047D2A4 /* ViewController.m */; };
 		196393B11C8567F90047D2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196393AF1C8567F90047D2A4 /* Main.storyboard */; };
 		196393B31C8567F90047D2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196393B21C8567F90047D2A4 /* Assets.xcassets */; };
 		196393B61C8567F90047D2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196393B41C8567F90047D2A4 /* LaunchScreen.storyboard */; };
 		196393C11C8567F90047D2A4 /* UILocalNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393C01C8567F90047D2A4 /* UILocalNotificationTests.m */; };
 		196393CC1C8567F90047D2A4 /* UILocalNotificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393CB1C8567F90047D2A4 /* UILocalNotificationUITests.m */; };
+		196393DD1C8568110047D2A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393DA1C8568110047D2A4 /* AppDelegate.m */; };
+		196393DE1C8568110047D2A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196393DC1C8568110047D2A4 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,6 @@
 /* Begin PBXFileReference section */
 		196393A31C8567F90047D2A4 /* UILocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196393A71C8567F90047D2A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		196393A91C8567F90047D2A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		196393AA1C8567F90047D2A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		196393AC1C8567F90047D2A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		196393AD1C8567F90047D2A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		196393B01C8567F90047D2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		196393B21C8567F90047D2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		196393B51C8567F90047D2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +47,10 @@
 		196393C71C8567F90047D2A4 /* UILocalNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILocalNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		196393CB1C8567F90047D2A4 /* UILocalNotificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILocalNotificationUITests.m; sourceTree = "<group>"; };
 		196393CD1C8567F90047D2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		196393D91C8568110047D2A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		196393DA1C8568110047D2A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		196393DB1C8568110047D2A4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		196393DC1C8568110047D2A4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,10 @@
 		196393A51C8567F90047D2A4 /* UILocalNotification */ = {
 			isa = PBXGroup;
 			children = (
-				196393A91C8567F90047D2A4 /* AppDelegate.h */,
-				196393AA1C8567F90047D2A4 /* AppDelegate.m */,
-				196393AC1C8567F90047D2A4 /* ViewController.h */,
-				196393AD1C8567F90047D2A4 /* ViewController.m */,
+				196393D91C8568110047D2A4 /* AppDelegate.h */,
+				196393DA1C8568110047D2A4 /* AppDelegate.m */,
+				196393DB1C8568110047D2A4 /* ViewController.h */,
+				196393DC1C8568110047D2A4 /* ViewController.m */,
 				196393AF1C8567F90047D2A4 /* Main.storyboard */,
 				196393B21C8567F90047D2A4 /* Assets.xcassets */,
 				196393B41C8567F90047D2A4 /* LaunchScreen.storyboard */,
@@ -270,8 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				196393AE1C8567F90047D2A4 /* ViewController.m in Sources */,
-				196393AB1C8567F90047D2A4 /* AppDelegate.m in Sources */,
+				196393DE1C8568110047D2A4 /* ViewController.m in Sources */,
+				196393DD1C8568110047D2A4 /* AppDelegate.m in Sources */,
 				196393A81C8567F90047D2A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UILocalNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TyroneWing.UILocalNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UILocalNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TyroneWing.UILocalNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";

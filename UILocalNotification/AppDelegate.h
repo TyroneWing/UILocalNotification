@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  UILocalNotification
+//  NSTimer
 //
-//  Created by yi on 16/3/1.
+//  Created by yi on 16/2/29.
 //  Copyright © 2016年 yi. All rights reserved.
 //
 
